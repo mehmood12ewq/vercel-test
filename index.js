@@ -10,9 +10,6 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  res.send("hello");
-});
 // app.post("/", async (req, res) => {
 //   const options = {
 //     apiKey: Yny99Mqbsyxy3DuCRiRwSbr9wsukez9PjwChD8Iv1wQ0JDQIe2YFdH9HFBmxoYE2,
@@ -47,27 +44,27 @@ app.get("/", (req, res) => {
 //   }
 // });
 
-app.post("/lyrics", async (req, res) => {
-  console.log("req.body : ", req.body);
-  console.log("song id : ",req.body.songId);
-  const options = {
-    id: req.body.songId,
-    apiKey: Yny99Mqbsyxy3DuCRiRwSbr9wsukez9PjwChD8Iv1wQ0JDQIe2YFdH9HFBmxoYE2,
-    title: req.body.song,
-    artist: req.body.artist,
-    optimizeQuery: true,
-  };
-  let id = req.body.songId;
-  let apiKey =  Yny99Mqbsyxy3DuCRiRwSbr9wsukez9PjwChD8Iv1wQ0JDQIe2YFdH9HFBmxoYE2;
-  try{
-    const song = await getSongById(id, apiKey);
-    console.log(song);
-    res.json(song);
-  }catch(e){
-    res.json("error: No such song");
-    console.log(e);
-  }
-})
+// app.post("/lyrics", async (req, res) => {
+//   console.log("req.body : ", req.body);
+//   console.log("song id : ",req.body.songId);
+//   const options = {
+//     id: req.body.songId,
+//     apiKey: Yny99Mqbsyxy3DuCRiRwSbr9wsukez9PjwChD8Iv1wQ0JDQIe2YFdH9HFBmxoYE2,
+//     title: req.body.song,
+//     artist: req.body.artist,
+//     optimizeQuery: true,
+//   };
+//   let id = req.body.songId;
+//   let apiKey =  Yny99Mqbsyxy3DuCRiRwSbr9wsukez9PjwChD8Iv1wQ0JDQIe2YFdH9HFBmxoYE2;
+//   try{
+//     const song = await getSongById(id, apiKey);
+//     console.log(song);
+//     res.json(song);
+//   }catch(e){
+//     res.json("error: No such song");
+//     console.log(e);
+//   }
+// })
 
 
 const app = express();
