@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import axios from 'axios';
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // app.post("/", async (req, res) => {
 //   const options = {
