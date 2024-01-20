@@ -1,5 +1,5 @@
 import express from 'express';
-// import bodyParser from 'body-parser';
+import bodyParser from 'body-parser';
 // import axios from 'axios';
 // import getLyrics from './lib/getLyrics';
 // import getSong from './lib/getSong';
