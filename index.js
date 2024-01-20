@@ -3,10 +3,10 @@ import bodyParser from 'body-parser';
 import axios from 'axios';
 import getLyrics from './lib/getLyrics';
 import getSong from './lib/getSong';
-import cors from 'cors';
+// import cors from 'cors';
 import searchSong from './lib/searchSong';
 import getSongById from './lib/getSongById';
-app.use(cors());
+// app.use(cors());
 
 app.use(bodyParser.json());
 
