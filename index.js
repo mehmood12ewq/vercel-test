@@ -1,14 +1,14 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-import axios from 'axios';
-import getLyrics from './lib/getLyrics';
-import getSong from './lib/getSong';
+// import bodyParser from 'body-parser';
+// import axios from 'axios';
+// import getLyrics from './lib/getLyrics';
+// import getSong from './lib/getSong';
 // import cors from 'cors';
-import searchSong from './lib/searchSong';
-import getSongById from './lib/getSongById';
+// import searchSong from './lib/searchSong';
+// import getSongById from './lib/getSongById';
 // app.use(cors());
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // app.post("/", async (req, res) => {
 //   const options = {
